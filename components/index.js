@@ -1,6 +1,6 @@
 // pages/index.js
 import React from "react";
-import Section from "./Section";
+import Section from "./section";
 import Section1 from "./section1";
 
 const Sections = () => {
