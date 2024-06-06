@@ -33,10 +33,10 @@ function Header_nx() {
           </nav>
           <div className="flex justify-center space-x-4">
             <button className="px-6 py-2 bg-red-600 text-white text-base font-semibold rounded-full hover:bg-red-700 transition duration-200">
-              Log In
+              <a href="/api/auth/login"> Log In</a>
             </button>
             <button className="px-6 py-2 bg-white text-red-600 text-base font-semibold rounded-full border border-red-600 hover:bg-gray-100 transition duration-200">
-              Sign Up
+              <a href="/api/auth/logout"> Sign Up</a>
             </button>
           </div>
         </div>
