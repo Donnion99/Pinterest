@@ -9,7 +9,6 @@ const Sections = () => {
   return (
     <>
       <Section id="section1" className="pt-20">
-        <h2 className="text-2xl font-semibold mb-4">Section 1</h2>
         <Section1 />
       </Section>
       <Section id="section2" className="bg-yellow-200">

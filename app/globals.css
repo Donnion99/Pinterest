@@ -3,6 +3,44 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+/* src/App.css */
+.slideshow-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.navigation {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.nav-button {
+  cursor: pointer;
+  padding: 5px;
+  margin: 0 3px;
+  background: #ccc;
+  border: none;
+  border-radius: 100px;
+}
+
+.nav-button.active {
+  background: #333;
+  color: white;
+}
+
 /* 
 :root {
   --foreground-rgb: 0, 0, 0;
