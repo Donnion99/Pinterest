@@ -20,9 +20,6 @@ function Section1() {
     <>
       {" "}
       <section className="text-gray-600 body-font">
-        <p className="text-6xl font-sans font-semibold text-center pb-10">
-          Get your next
-        </p>
         <Slideshow slides={slides} interval={2000} />
       </section>
     </>
