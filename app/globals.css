@@ -40,7 +40,18 @@
   background: #333;
   color: white;
 }
+ @keyframes up-down {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
 
+    .animate-up-down {
+      animation: up-down 1s ease-in-out infinite;
+    }
 /* 
 :root {
   --foreground-rgb: 0, 0, 0;

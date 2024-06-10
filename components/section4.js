@@ -4,7 +4,7 @@ import React from "react";
 function Section4() {
   return (
     <>
-      <section className="text-gray-600 body-font w-full">
+      <section className="text-gray-600 body-font w-full h-fit  ">
         <div className="container mx-auto flex flex-wrap justify-between items-center relative">
           <div className="w-full md:w-1/2 relative">
             <img

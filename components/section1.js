@@ -19,7 +19,7 @@ function Section1() {
   return (
     <>
       {" "}
-      <section className="text-gray-600 body-font">
+      <section>
         <Slideshow slides={slides} interval={2000} />
       </section>
     </>

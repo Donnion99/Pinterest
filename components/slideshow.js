@@ -24,7 +24,7 @@ const Slideshow = ({ slides, interval = 3000 }) => {
   return (
     <>
       <div className="slideshow-container text-center hidden md:block">
-        <p className="text-6xl font-sans font-semibold text-center pb-10">
+        <p className="text-6xl text-black font-sans font-semibold text-center pt-4 pb-7 ">
           Get your next
         </p>
         {slides.map((slide, index) => (
@@ -46,9 +46,11 @@ const Slideshow = ({ slides, interval = 3000 }) => {
             />
           ))}
         </div>
-        <div className="flex justify-center items-center ">
+      </div>
+      <div class="h-screen bg-white ">
+        <div className="flex flex-col justify-items-end h-full justify-center items-center pb-12">
           <a
-            class="mt-20 bottom-8 right-8 text-white p-4 rounded-full flex items-center justify-center  transition duration-300"
+            class="mt-20 bottom-8 right-8 text-white p-4 rounded-full flex items-center justify-center  transition duration-300 animate-up-down"
             style={{ backgroundColor: Color[currentSlide] }}
             onClick={scrollToSection2}
           >
@@ -84,14 +86,23 @@ const Slideshow = ({ slides, interval = 3000 }) => {
         </div>
         <br />
         <br />
-        <br />
-        <br />
-        <br />
       </div>
-      <div className="bg-yellow-200 w-full py-6 flex flex-col justify-end absolute bottom-0 left-0 right-0">
-        <a onClick={scrollToSection2} className="font-bold text-xl">
-          Here’s how it works
-        </a>
+
+      <div
+        className="bg-yellow-200 w-full py-6 flex flex-row justify-center items-center bottom-0 absolute"
+        onClick={scrollToSection2}
+      >
+        <a className="font-bold text-xl">Here’s how it works</a>
+        <svg
+          aria-label="arrow down icon"
+          class="Uvi gUZ U9O kVc ml-2"
+          height="12"
+          role="img"
+          viewBox="0 0 24 24"
+          width="12"
+        >
+          <path d="M20.16 6.65 12 14.71 3.84 6.65a2.27 2.27 0 0 0-3.18 0 2.2 2.2 0 0 0 0 3.15L12 21 23.34 9.8a2.2 2.2 0 0 0 0-3.15 2.26 2.26 0 0 0-3.18 0"></path>
+        </svg>
       </div>
     </>
   );

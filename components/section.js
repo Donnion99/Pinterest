@@ -3,7 +3,7 @@ import React from "react";
 
 const Section = ({ id, children, className }) => {
   return (
-    <section id={id} className={className}>
+    <section style={{ height: "100vh" }} id={id} className={className}>
       <div>{children}</div>
     </section>
   );
