@@ -46,46 +46,46 @@ const Slideshow = ({ slides, interval = 3000 }) => {
             />
           ))}
         </div>
-      </div>
-      <div class="h-screen bg-white ">
-        <div className="flex flex-col justify-items-end h-full justify-center items-center pb-12">
-          <a
-            class="mt-20 bottom-8 right-8 text-white p-4 rounded-full flex items-center justify-center  transition duration-300 animate-up-down"
-            style={{ backgroundColor: Color[currentSlide] }}
-            onClick={scrollToSection2}
-          >
-            <svg
-              fill="#ffffff"
-              height="30px"
-              width="30px"
-              version="1.1"
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="-46.2 -46.2 422.40 422.40"
-              stroke="#ffffff"
-              stroke-width="33"
-              transform="matrix(-1, 0, 0, 1, 0, 0)"
+        <div class="h-screen bg-white ">
+          <div className="flex flex-col justify-items-end h-full justify-center items-center pb-12">
+            <a
+              class="mt-20 bottom-8 right-8 text-white p-4 rounded-full flex items-center justify-center  transition duration-300 animate-up-down"
+              style={{ backgroundColor: Color[currentSlide] }}
+              onClick={scrollToSection2}
             >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke="#CCCCCC"
-                stroke-width="1.98"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                {" "}
-                <path
-                  id="XMLID_225_"
-                  d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
-                ></path>{" "}
-              </g>
-            </svg>
-          </a>{" "}
+              <svg
+                fill="#ffffff"
+                height="30px"
+                width="30px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="-46.2 -46.2 422.40 422.40"
+                stroke="#ffffff"
+                stroke-width="33"
+                transform="matrix(-1, 0, 0, 1, 0, 0)"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke="#CCCCCC"
+                  stroke-width="1.98"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  {" "}
+                  <path
+                    id="XMLID_225_"
+                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                  ></path>{" "}
+                </g>
+              </svg>
+            </a>{" "}
+          </div>
+          <br />
+          <br />
         </div>
-        <br />
-        <br />
       </div>
 
       <div
