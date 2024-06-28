@@ -49,7 +49,7 @@ function Explore() {
   return (
     <>
       <Header_nx />
-      <div className="min-h-screen bg-gray-100 p-6">
+      <div className="min-h-screen bg-gray-100 p-6 mt-44 md:mt-0">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl font-bold text-center mb-6">Explore</h1>
           <div className="flex justify-center mb-6">
@@ -71,21 +71,37 @@ function Explore() {
             {videos?.map((video, index) => (
               <div
                 key={index}
-                className="bg-white p-4 rounded-lg shadow-md relative"
+                className="bg-white p-4 rounded-lg shadow-lg relative hover:shadow-xl transition duration-300 ease-in-out"
               >
-                <video controls className="w-full h-96 object-cover rounded-lg">
-                  <source src={video.videos.small.url} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <button
-                  onClick={() => handleDownload(video.videoURL, "video.mp4")}
-                  className="absolute bottom-4 right-4 bg-blue-500 hover:bg-blue-600 m-2 text-white py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out"
+                <div
+                  className="relative"
+                  style={{ height: "180px", width: "100%" }}
                 >
-                  Download
-                </button>
-                <button className="bg-gray-200 hover:bg-gray-300 text-gray-700 m-2 py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out">
-                  Views: {video.views}
-                </button>
+                  <img
+                    src={video.videos.large.thumbnail}
+                    alt="Video Thumbnail"
+                    className="w-full h-full object-cover rounded-lg"
+                    style={{ height: "180px", width: "100%" }}
+                  />
+                  <video
+                    controls
+                    className="absolute inset-0 w-full h-full opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                  >
+                    <source src={video.videos.small.url} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div className="mt-4 flex justify-between items-center">
+                  <button
+                    onClick={() => handleDownload(video.videoURL, "video.mp4")}
+                    className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out"
+                  >
+                    Download
+                  </button>
+                  <button className="bg-gray-200 hover:bg-gray-300 text-gray-700 py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out">
+                    Views: {video.views}
+                  </button>
+                </div>
               </div>
             ))}
           </div>

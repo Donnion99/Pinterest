@@ -50,7 +50,7 @@ function Explore() {
     <>
       <Header_nx />
 
-      <div className="min-h-screen bg-gray-100 p-6">
+      <div className="min-h-screen bg-gray-100 p-6 mt-44 md:mt-0">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl font-bold text-center mb-6">Explore</h1>
           <div className="flex justify-center mb-6">
