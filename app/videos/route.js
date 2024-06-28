@@ -11,19 +11,22 @@ export async function GET(request) {
   const params = request.nextUrl.searchParams;
   const query = params.get("query");
   const per_page = 200;
+  const safe = true;
+
   try {
     const response = await axios.get("https://pixabay.com/api/videos/", {
       params: {
         q: query,
         per_page: per_page,
         key: PIXABAY_KEY,
+        safesearch: safe,
       },
     });
 
     return NextResponse.json(response.data);
   } catch (error) {
     return NextResponse.json({
-      error: "Error fetching images | Query is null",
+      error: "Error fetching videos | Query is null",
     });
   }
 }
