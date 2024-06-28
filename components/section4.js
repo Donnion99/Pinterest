@@ -1,5 +1,6 @@
 import React from "react";
 // import Image from "next/image";
+import Link from "next/link";
 
 function Section4() {
   return (
@@ -41,9 +42,12 @@ function Section4() {
               from people around the world.
             </p>
             <div className="flex mt-6 justify-center">
-              <button className="px-5 py-4 bg-red-600 text-white text-base font-semibold rounded-full hover:bg-red-700 transition duration-200">
+              <Link
+                href="/explore"
+                className="px-5 py-4 bg-red-600 text-white text-base font-semibold rounded-full hover:bg-red-700 transition duration-200"
+              >
                 Explore
-              </button>
+              </Link>
             </div>
           </div>
         </div>

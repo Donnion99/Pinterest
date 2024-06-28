@@ -8,7 +8,7 @@ function Header_nx() {
   return (
     <>
       <header className="text-gray-600 body-font fixed top-0 left-0 w-full z-50 bg-white ">
-        <div className="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center md:flex hidden">
+        <div className="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center md:flex">
           <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <Image
               src="/pinterest-svgrepo-com.svg"
