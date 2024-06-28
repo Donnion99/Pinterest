@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useUser } from "@auth0/nextjs-auth0/client";
+import Link from "next/link";
 
 function Header_nx() {
   const { user } = useUser();
@@ -22,15 +23,24 @@ function Header_nx() {
             </span>
           </a>
           <nav className="md:mr-auto md:ml-2 md:py-1 md:pl-2 flex flex-wrap items-center text-base justify-center">
-            <a className="mr-4 text-gray-900 font-medium hover:bg-gray-200 p-2 pt-2 rounded-lg">
+            <Link
+              href="/"
+              className="mr-4 text-gray-900 font-medium hover:bg-gray-200 p-2 pt-2 rounded-lg"
+            >
               Today
-            </a>
-            <a className="mr-4 text-gray-900 font-medium hover:bg-gray-200 p-2 pt-2 rounded-lg">
+            </Link>
+            <Link
+              href="/watch"
+              className="mr-4 text-gray-900 font-medium hover:bg-gray-200 p-2 pt-2 rounded-lg"
+            >
               Watch
-            </a>
-            <a className="mr-4 text-gray-900 font-medium hover:bg-gray-200 p-2 pt-2 rounded-lg">
+            </Link>
+            <Link
+              href="/explore"
+              className="mr-4 text-gray-900 font-medium hover:bg-gray-200 p-2 pt-2 rounded-lg"
+            >
               Explore
-            </a>
+            </Link>
           </nav>
           <div className="flex justify-center space-x-4">
             {user ? (

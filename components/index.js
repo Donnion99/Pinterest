@@ -11,13 +11,18 @@ const Sections = () => {
       <Section id="section1" className="pt-20">
         <Section1 />
       </Section>
-      <Section id="section2" className="bg-yellow-200">
-        {/* <h2 className="text-2xl font-semibold mb-4 ">Section 2</h2> */}
-        <Section2 />
-      </Section>
-      <Section id="section3" className="bg-cyan-50 ">
-        <Section3 />
-      </Section>
+      <div>
+        <Section id="section2" className="bg-yellow-200">
+          {/* <h2 className="text-2xl font-semibold mb-4 ">Section 2</h2> */}
+          <Section2 />
+        </Section>
+      </div>
+
+      <div>
+        <Section id="section3" className="bg-cyan-50 ">
+          <Section3 />
+        </Section>
+      </div>
       <Section id="section4" className="bg-pink-100">
         <Section4 />
       </Section>

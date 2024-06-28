@@ -46,7 +46,7 @@ const Slideshow = ({ slides, interval = 3000 }) => {
             />
           ))}
         </div>
-        <div class="h-screen bg-white ">
+        <div class=" bg-white ">
           <div className="flex flex-col justify-items-end h-full justify-center items-center pb-12">
             <a
               class="mt-20 bottom-8 right-8 text-white p-4 rounded-full flex items-center justify-center  transition duration-300 animate-up-down"

@@ -18,7 +18,6 @@ function Section1() {
 
   return (
     <>
-      {" "}
       <section>
         <Slideshow slides={slides} interval={2000} />
       </section>
