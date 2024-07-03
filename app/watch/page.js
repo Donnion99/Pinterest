@@ -16,7 +16,7 @@ function Explore() {
         setVideos([]);
         const response = await axios.get("/videos/", {
           params: {
-            query: searchTerm || "Fashion",
+            query: searchTerm || "Art",
           },
         });
         setVideos(response.data.hits);
