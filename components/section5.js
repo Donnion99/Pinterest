@@ -1,5 +1,5 @@
 import React from "react";
-import "./Section.css"; // Import your CSS file
+import "./section.css"; // Import your CSS file
 
 function Section5() {
   return (
