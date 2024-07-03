@@ -4,22 +4,22 @@ import "./Section.css"; // Import your CSS file
 function Section5() {
   return (
     <>
-      <section className="text-gray-600 body-font w-full sectionWithBackground">
+      <section className="text-gray-600 body-font w-full sectionWithBackground flex justify-center items-center">
         <div className="container mx-auto flex flex-wrap justify-between items-center relative">
-          <div className="w-full md:w-1/2 py-24 flex flex-col ">
-            <p className="leading-relaxed text-5xl md:text-6xl font-semibold text-white my-6 ">
+          <div className="w-full md:w-1/2 py-24 flex flex-col">
+            <p className="leading-relaxed text-5xl md:text-6xl font-semibold text-white my-6">
               Sign up to
             </p>
-            <p className="leading-relaxed text-5xl md:text-6xl font-semibold  text-white mb-6">
+            <p className="leading-relaxed text-5xl md:text-6xl font-semibold text-white mb-6">
               get your
             </p>
-            <p className="leading-relaxed text-5xl md:text-6xl font-semibold text-white  ">
+            <p className="leading-relaxed text-5xl md:text-6xl font-semibold text-white">
               ideas
             </p>
           </div>
-          <div className="w-full md:w-1/2  flex justify-center items-center">
-            <div className="bg-gray-100 mt-20 h-48">
-              <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+          <div className="w-full md:w-1/2 flex justify-center items-center">
+            <div className="relative mt-20">
+              <div className="bg-white p-6 rounded shadow-md w-full max-w-xs">
                 <div className="flex justify-center mb-4">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pinterest-logo.png/600px-Pinterest-logo.png"
