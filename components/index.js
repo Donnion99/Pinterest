@@ -28,6 +28,7 @@ const Sections = () => {
       </Section>
       <Section id="section5">
         <h2 className="text-2xl font-semibold mb-4">Section 5</h2>
+
         {/* Your content for Section 5 */}
       </Section>
     </>
