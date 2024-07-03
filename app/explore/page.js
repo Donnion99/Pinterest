@@ -13,6 +13,7 @@ function Explore() {
     for (let i = 0; i < 1; i++) {
       try {
         setLoading(true);
+        setImages([]);
         const response = await axios.get("/images/", {
           params: {
             query: searchTerm || "Nature",

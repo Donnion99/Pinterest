@@ -13,6 +13,7 @@ function Explore() {
     for (let i = 0; i < 1; i++) {
       try {
         setLoading(true);
+        setVideos([]);
         const response = await axios.get("/videos/", {
           params: {
             query: searchTerm || "Fashion",
