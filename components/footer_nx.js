@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer_nx() {
   return (
-    <footer className="bg-white text-black py-4 mb-12">
+    <footer className="bg-white text-black py-4 mb-12 md:mb-0 h-full">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center sm:justify-between items-center text-sm font-pacifico font-medium text-center sm:text-left">
           <a href="#" className="hover:underline mx-1 sm:mx-2">

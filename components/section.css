@@ -1,0 +1,7 @@
+.sectionWithBackground {
+    background-image: url('../public/signup-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Adjust height as needed */
+}

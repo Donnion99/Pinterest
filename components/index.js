@@ -4,6 +4,7 @@ import Section1 from "./section1";
 import Section2 from "./section2";
 import Section4 from "./section4";
 import Section3 from "./section3";
+import Section5 from "./section5";
 
 const Sections = () => {
   return (
@@ -27,9 +28,7 @@ const Sections = () => {
         <Section4 />
       </Section>
       <Section id="section5">
-        <h2 className="text-2xl font-semibold mb-4">Section 5</h2>
-
-        {/* Your content for Section 5 */}
+        <Section5 />
       </Section>
     </>
   );

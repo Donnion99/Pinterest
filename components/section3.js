@@ -21,15 +21,16 @@ function Section3() {
           </div>
           <div className="w-full md:w-1/2 relative">
             <img
-              src="https://s.pinimg.com/webapp/shop-de8ddf10.png"
+              src="./image2.png"
+              width="100%"
               alt="Picture of the author"
               className="w-full h-auto"
             />
-            <img
+            {/* <img
               src="https://s.pinimg.com/webapp/creator-pin-img-3bed5463.png"
               alt="Overlay image"
               className="absolute top-20 left-8  w-1/3 h-auto rounded-3xl"
-            />
+            /> */}
             {/* <p className="absolute top-48   left-14 w-48 text-sm text-center text-white bg-black bg-opacity-50 p-2 rounded">
               <a
                 href="https://in.pinterest.com/search/pins/?q=lip%20shade"
