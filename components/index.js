@@ -14,7 +14,7 @@ const Sections = () => {
       <Section id="section0">
         <PinterestWelcome />
       </Section>
-      <Section id="section1" className="pt-20">
+      <Section id="section1">
         <Section1 />
       </Section>
       <div>

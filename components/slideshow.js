@@ -23,7 +23,7 @@ const Slideshow = ({ slides, interval = 3000 }) => {
 
   return (
     <>
-      <div className="slideshow-container text-center hidden md:block relative h-4/5">
+      <div className="slideshow-container text-center hidden md:block relative h-4/5 pt-20">
         <p className="text-6xl text-black font-sans font-semibold text-center pt-4 pb-7 ">
           Get your next
         </p>
