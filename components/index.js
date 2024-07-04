@@ -5,10 +5,15 @@ import Section2 from "./section2";
 import Section4 from "./section4";
 import Section3 from "./section3";
 import Section5 from "./section5";
+import PinterestWelcome from "./mobile_sections/first";
+import PinterestSignup from "./mobile_sections/last";
 
 const Sections = () => {
   return (
     <>
+      <Section id="section0">
+        <PinterestWelcome />
+      </Section>
       <Section id="section1" className="pt-20">
         <Section1 />
       </Section>
@@ -29,6 +34,9 @@ const Sections = () => {
       </Section>
       <Section id="section5">
         <Section5 />
+      </Section>
+      <Section id="section6">
+        <PinterestSignup />
       </Section>
     </>
   );

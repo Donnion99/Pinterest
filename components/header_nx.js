@@ -3,11 +3,13 @@ import Image from "next/image";
 import { useUser } from "@auth0/nextjs-auth0/client";
 import Link from "next/link";
 
-function Header_nx() {
+function Header_nx(props) {
   const { user } = useUser();
   return (
     <>
-      <header className="text-gray-600 body-font fixed top-0 left-0 w-full z-50 bg-white">
+      <header
+        className={`text-gray-600 body-font fixed top-0 left-0 w-full z-50 bg-white ${props.class}`}
+      >
         <div className="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center md:flex">
           <Link
             href="/"

@@ -3,5 +3,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh; /* Adjust height as needed */
+    height: 100%; /* Adjust height as needed */
 }
+.signup-bg {
+    background-image: url('../public/login-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%; /* Adjust height as needed */
+}
+

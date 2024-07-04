@@ -1,8 +1,10 @@
 import React from "react";
 
-function Footer_nx() {
+function Footer_nx(props) {
   return (
-    <footer className="bg-white text-black py-4 mb-12 md:mb-0 h-full">
+    <footer
+      className={`md:bg-white text-white md:text-black py-4 mb-12 md:mb-0 h-full ${props.class}`}
+    >
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center sm:justify-between items-center text-sm font-pacifico font-medium text-center sm:text-left">
           <a href="#" className="hover:underline mx-1 sm:mx-2">
@@ -30,7 +32,7 @@ function Footer_nx() {
             More
           </a>
         </div>
-        <div className="mt-4 text-sm text-gray-500 text-center">
+        <div className="mt-4 text-sm md:text-gray-600 text-white text-center">
           <p>
             &copy; 2024 Pinterest. All rights reserved. Made By Kunal Khude ❤️
           </p>

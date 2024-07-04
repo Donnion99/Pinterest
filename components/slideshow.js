@@ -23,7 +23,7 @@ const Slideshow = ({ slides, interval = 3000 }) => {
 
   return (
     <>
-      <div className="slideshow-container text-center hidden md:block">
+      <div className="slideshow-container text-center hidden md:block relative h-4/5">
         <p className="text-6xl text-black font-sans font-semibold text-center pt-4 pb-7 ">
           Get your next
         </p>
@@ -87,9 +87,8 @@ const Slideshow = ({ slides, interval = 3000 }) => {
           <br />
         </div>
       </div>
-
       <div
-        className="bg-yellow-200 w-full py-6 flex flex-row justify-center items-center bottom-0 absolute"
+        className="bg-yellow-200 w-full py-6 flex flex-row justify-center items-center bottom-0 relative "
         onClick={scrollToSection2}
       >
         <a className="font-bold text-xl">Here’s how it works</a>

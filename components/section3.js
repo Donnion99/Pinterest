@@ -1,13 +1,14 @@
 import React from "react";
 // import Image from "next/image";
+import Link from "next/link";
 
 function Section3() {
   return (
     <>
       <section className="text-gray-600 body-font w-full">
-        <div className="container mx-auto flex flex-wrap justify-between items-center relative">
+        <div className="container mx-auto flex flex-wrap justify-between items-center relative h-full">
           <div className="w-full md:w-1/2 py-24 flex flex-col items-center text-center">
-            <p className="leading-relaxed text-4xl md:text-6xl font-bold text-red-700  ">
+            <p className="md:leading-relaxed leading-snug text-6xl md:text-6xl font-bold text-red-700  ">
               Save ideas you like
             </p>
             <p className="leading-relaxed text-xl md:text-2xl text-red-700 mt-5 w-1/2 md:w-1/2">
@@ -15,7 +16,7 @@ function Section3() {
             </p>
             <div className="flex mt-6 justify-center">
               <button className="px-5 py-4 bg-red-600 text-white text-base font-semibold rounded-full hover:bg-red-700 transition duration-200">
-                Explore
+                <Link href="/watch">Watch</Link>
               </button>
             </div>
           </div>
