@@ -1,5 +1,7 @@
 import React from "react";
 import "../section.css"; // Import your CSS file
+import { useUser } from "@auth0/nextjs-auth0/client";
+
 const PinterestWelcome = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6 md:hidden signup-bg text-white">
@@ -53,20 +55,21 @@ const PinterestWelcome = () => {
         </div>
 
         <button className="w-full bg-red-600 text-white py-2 px-4 rounded-md mb-3">
-          Continue with email
+          <a href="/api/auth/login">Continue with email</a>
         </button>
         <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-md mb-3">
-          Continue with Google
+          <a href="/api/auth/login"> Continue with Google </a>
         </button>
         <div className=" mb-3 text-white">
           Already a member?{" "}
-          <a href="#" className="text-white">
+          <a href="/api/auth/login" className="text-white">
+            {" "}
             Log in
           </a>
         </div>
         <div className="text-white mb-3">
           Are you a business?{" "}
-          <a href="#" className="text-white">
+          <a href="/api/auth/login" className="text-white">
             Get started here
           </a>
         </div>

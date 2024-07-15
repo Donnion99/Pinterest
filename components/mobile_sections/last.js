@@ -48,22 +48,22 @@ const PinterestSignup = () => {
           </h1>
 
           <button className="bg-red-600 text-white py-2 px-4 rounded w-full mb-4">
-            Continue with email
+            <a href="/api/auth/login"> Continue with email</a>
           </button>
           <button className="bg-gray-800 text-white py-2 px-4 rounded w-full mb-4">
-            Continue with Google
+            <a href="/api/auth/login"> Continue with Google</a>
           </button>
 
           <div className="text-center text-white mb-4">
             Already a member?{" "}
-            <a href="#" className="text-white">
+            <a href="/api/auth/login" className="text-white">
               Log in
             </a>
           </div>
 
           <div className="text-center text-white mb-4">
             Are you a business?{" "}
-            <a href="#" className="text-white">
+            <a href="/api/auth/login" className="text-white">
               Get started here
             </a>
           </div>
