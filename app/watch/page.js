@@ -8,6 +8,10 @@ function Explore() {
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // fectching video
   const fetchImages = async () => {
     for (let i = 0; i < 1; i++) {
